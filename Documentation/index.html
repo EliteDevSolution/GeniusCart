@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Documentation | GeniusCart</title>
+    <!--favicon icon-->
+    <link rel="icon" href="images/favicon.ico">
+    <meta name="description" content="Thanks for purchasing Corpoint. If you need any support, please contact with us.">
+    <meta name="author" content="UX-Theme">
+    <meta name="copyright" content="UX-Theme">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/theme.fonts.css">
+    <link rel="stylesheet" href="css/global-style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="oh">
+            <div class="left-side">
+                <div class="logo">
+                    <a href="http://belal.uicdux.com/"><img src="images/logo.png" alt="logo"></a>
+                </div>
+                <div class="left-content">
+                    <ul>
+                        <li><a href="#introduction" class="anchor">Introduction</a></li>
+                        <li><a href="#about" class="anchor">About</a></li>
+                        <li><a href="#installation" class="anchor">Installation</a></li>
+                        <li><a href="#cron" class="anchor">Cron job</a></li>
+                        <li><a href="#admin" class="anchor">Admin</a></li>
+                        <li><a href="#dashboard" class="anchor">Dashboard</a></li>
+                        <li><a href="javascript:void(0)">Orders<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#allOrders" class="anchor"><span><i class="fa fa-angle-right"></i></span>All Orders</a></li>
+                                <li><a href="#pendingOrders" class="anchor"><span><i class="fa fa-angle-right"></i></span>Pending Orders</a></li>
+                                <li><a href="#processingOrders" class="anchor"><span><i class="fa fa-angle-right"></i></span>Processing Orders</a></li>
+                                <li><a href="#completedOrders" class="anchor"><span><i class="fa fa-angle-right"></i></span>Completed Orders</a></li>
+                                <li><a href="#declinedOrders" class="anchor"><span><i class="fa fa-angle-right"></i></span>Declined Orders</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0)">Products<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#allProducts" class="anchor"><span><i class="fa fa-angle-right"></i></span>All Products</a></li>
+                                <li><a href="#deactivatedProducts" class="anchor"><span><i class="fa fa-angle-right"></i></span>Deactivated Products</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#affilate_prod" class="anchor">Affilate Product</a></li>
+
+                        <li><a href="javascript:void(0)">Customers<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#customersList" class="anchor"><span><i class="fa fa-angle-right"></i></span>Customers List</a></li>
+                                <li><a href="#customerWithdraws" class="anchor"><span><i class="fa fa-angle-right"></i></span>Withdraws</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0)">Vendors<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown">
+                              <li><a href="#vendorsList" class="anchor"><span><i class="fa fa-angle-right"></i></span>Vendors List</a></li>
+                              <li><a href="#withdraws" class="anchor"><span><i class="fa fa-angle-right"></i></span>Withdraws</a></li>
+                              <li><a href="#vendorsubs" class="anchor"><span><i class="fa fa-angle-right"></i></span>Vendor Subscriptions</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#verify" class="anchor">Vendor Verifications</a></li>
+
+                        <li><a href="#subplans" class="anchor">Subscription Plans</a></li>
+                        <li><a href="javascript:void(0)">Manage Categories<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#mainCategory" class="anchor"><span><i class="fa fa-angle-right"></i></span>Main Category</a></li>
+                                <li><a href="#subCategory" class="anchor"><span><i class="fa fa-angle-right"></i></span>Sub Category</a></li>
+                                <li><a href="#childCategory" class="anchor"><span><i class="fa fa-angle-right"></i></span>Child Category</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#bulk_prod" class="anchor">Bulk Product Upload</a></li>
+
+                        <li><a href="#prodiscuss" class="anchor">Product Discussion</a></li>
+                        <li><a href="#coupons" class="anchor">Set Coupons</a></li>
+                        <li><a href="#blogSection" class="anchor">Blog</a></li>
+                        <li><a href="#messages" class="anchor">Message</a></li>
+                        <li><a href="javascript:void(0)">General Settings<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#logo" class="anchor"><span><i class="fa fa-angle-right"></i></span>Logo</a></li>
+                                <li><a href="#favicon" class="anchor"><span><i class="fa fa-angle-right"></i></span>Favicon</a></li>
+                                <li><a href="#loader" class="anchor"><span><i class="fa fa-angle-right"></i></span>Loader</a></li>
+                                <li><a href="#shipping_methods" class="anchor"><span><i class="fa fa-angle-right"></i></span>Shipping Methods</a></li>
+                                <li><a href="#packagings" class="anchor"><span><i class="fa fa-angle-right"></i></span>Packagings</a></li>
+                                <li><a href="#picupLocation" class="anchor"><span><i class="fa fa-angle-right"></i></span>Pickup Location</a></li>
+                                <li><a href="#websiteContents" class="anchor"><span><i class="fa fa-angle-right"></i></span>Website Contents</a></li>
+
+                                <li><a href="#footer" class="anchor"><span><i class="fa fa-angle-right"></i></span>Footer</a></li>
+                                <li><a href="#affiliateInformations" class="anchor"><span><i class="fa fa-angle-right"></i></span>Affiliate Informations</a></li>
+                                <li><a href="#popup_banners" class="anchor"><span><i class="fa fa-angle-right"></i></span>Popup Banner</a></li>
+                                <li><a href="#error_banners" class="anchor"><span><i class="fa fa-angle-right"></i></span>Error Banner</a></li>
+                                <li><a href="#maintenance" class="anchor"><span><i class="fa fa-angle-right"></i></span>Website Maintenance</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#sliders" class="anchor">Home Page Settings</a></li>
+                        <li><a href="#faqPage"  class="anchor">Menu Page Settings</a></li>
+                        <li><a href="javascript:void(0)">Email Settings<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#emailtemplates" class="anchor"><span><i class="fa fa-angle-right"></i></span>Email Templates</a></li>
+                                <li><a href="#emailconf" class="anchor"><span><i class="fa fa-angle-right"></i></span>Email Configurations</a></li>
+                                <li><a href="#groupemail" class="anchor"><span><i class="fa fa-angle-right"></i></span>Group Email</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0)">Payment Settings<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#paymentInformations" class="anchor"><span><i class="fa fa-angle-right"></i></span>Payment Informations</a></li>
+                                <li><a href="#paymentGateways" class="anchor"><span><i class="fa fa-angle-right"></i></span>Payment Gateways</a></li>
+                                <li><a href="#currencySettings" class="anchor"><span><i class="fa fa-angle-right"></i></span>Currency Settings</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#socialsettings" class="anchor">Social Settings</a></li>
+                        <li><a href="#languageSetting" class="anchor">Language Settings</a></li>
+                        <li><a href="#seotools" class="anchor">SEO Tools</a></li>
+                        <li><a href="#manageStaffs" class="anchor">Manage Staffs</a></li>
+                        <li><a href="#subscribers" class="anchor">Subscribers</a></li>
+                        <li><a href="#manageroles" class="anchor">Manage Roles</a></li>
+                        <li><a href="#support" class="anchor">Support</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!--right side-->
+        <div class="right-side">
+            <div class="right-content">
+                
+                <!--id introduction-->
+                <div id="introduction" class="common_section">
+                    <h1 class="bit_title">GeniusCart</h1>
+                    <div class="content-welcome">
+                        <h4>GeniusCart - Single or Multivendor Ecommerce System with Physical and Digital Product Marketplace</h4>
+                        <p><strong>Updated on:  </strong> Mar 23, 2019</p>
+                        <p><strong>By: </strong> <a href="">GeniusOcean</a></p>
+                        <p><strong>Email: </strong> badruddoza.me@gmail.com</p>
+                    </div>
+                </div>
+
+                <!--id about-->
+                <div id="about" class="common_section">
+                    <h1 class="bit_title">About</h1>
+                    <div class="content-welcome">
+                        <p><strong>“GeniusCart”</strong> is The All in ONE solution for SINGLE or MULTI Vendor Ecommerce Business Management System. This CMS Includes everything you need to make an ecommerce business and one of the BEST eCommerce store available in envato market. If you properly check all the functionalities of this system then we can assure you that you will skip other best ecommerce platforms or online stores.</p>
+
+                        <p>This ecommerce software is developed to sell any kind of PHYSICAL, DIGITAL or LICENSE KEY in one single platform! You can use this ecommerce script to make any kind of sopping website such as FASHION store, JWELLERY store, ORGANIC store, ELECTRONIC store, EBOOK store, SOFTWARE or GAME LICENSE key store anything!</p>
+
+                        <p>Your customers can request to be vendor and sell their products in your store. Every vendor will have their own shop page so that they will do marketing and your store will be promoted automatically. You can disable this feature from admin panel and use this system as a single vendor shopping store too!.</p>
+
+                        <p>You can earn from subscription system and withdraw fee both from this system. Admin can create unlimited packase with product limitation and fee from admin panel. Admin can set FREE package and unlimited package too.</p>
+
+                        <p>The greatest feature of this ecommerce system is POWERFUL ADMIN PANEL! You can set anything without any kind of coding skills. This PHP ecommerce script is developed using Laravel framework so It is very easy to extend and will not show any kind of errors anytime like wordpress, shopify or other CMS templates.</p>
+
+                    </div>
+                </div>
+
+
+                <!--id installation-->
+                <div id="installation" class="common_section installation">
+                   <h1 class="bit_title">Installation</h1>
+                    <div class="content-welcome">
+                        <p>After downloading file from codecanoyn just extract in your computer and you will get three folders:</p>
+
+                        <p><strong>Step 1 : </strong>Extract files.zip from Files folder to server.</p>
+                        <p><strong>Step 2 : </strong>Create a new database in your server.</p>
+                        <p><strong>Step 3 : </strong>Now check your domain(Website Name), you will get an installation page.</p>
+                        <p><strong>Step 4 : </strong>Enter your installation details then click on Install.<br></p>
+                        <p><strong>Step 5 : </strong>Please wait until the installation is complete. After completing installation, it will show you a success message.</p>
+                        <p><strong>Step 6 : </strong>Then click on Close & Run Website (You must click it).</p>
+                         <p><u><strong>To login into admin panel, visit:</strong></p></u>
+                            yourwebsiteURL.com/admin<br>
+                            User: admin@gmail.com<br>
+                            Password: 1234<p>
+
+                                <br><br>We provide free installation within 24 hours except Friday. Please message us from our codecanyon profile for free installation and send your Domain Name, Cpanel details and purchase key from codecanyon.<br><br><b>You must collect your purchase code from codecanyon download section and enter it in the system or the system will be down automatically after 30 days of installation. You need to run the system in one domain, multiple domain can be allowed for test purpose for 30 days or the system will be down anytime automatically.</b>
+                       
+                    </div>
+                </div>
+                <div>
+                    <h1 class="bit_title">Move to another Server.</h1>
+                    <div class="content-welcome">
+                        You can use your purchase code only 10 times. To get purchase code, follow this instruction or contact us: <a target="_blank"href="https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-">Get Purchase Code</a>. <br>Please follow the process to change your server:<br>
+                        - For Moving you script to another server, Please go to: Admin Panel->System Settings->Generate BackUp from left side menu.<br>
+- You will find a Button "Generate BackUp" click on that button and wait for the backup process is finished.<br>
+- After finishing the BackUp process you will see the backup file information. Please click on the file link and download it.<br>
+- Now export your database file also from Phpmyadmin.<br>
+- Then upload it to another server and extract it.<br>
+- Now Go to www.example.com/install (Your domain name/install) to install it again <br>
+- You will find a new install page, enter the correct informations and upload your database file.<br>
+- Now Click on install, after install Click on Close and Run website (You Must Click It)<br>
+                                
+                       
+                    </div>
+                </div>
+
+                <!--id cron-->
+                <div id="cron" class="common_section installation">
+                    <h1 class="bit_title">Cron job</h1>
+                    <div class="content-welcome">
+                    <img src="./images/cron.png" alt="banner" style="max-width: 768px;">
+                    <p></p>
+
+                      
+                    You need to set cron job to check subscription package validity everyday. if the expiriration date is over then user will be notified via email also users will get an alert before 5 days of expiration date of their subscription package. <br/>
+                    Cron Command: <b>wget http://YourDomain.Name/vendor/subscription/check</b><br/>
+                    Cron Time: Set the time to 'once per day' to run the validation check daily.<br/>
+                    </div>
+                </div>
+
+
+                <!--id admin-->
+                <div id="admin" class="common_section">
+                    <h1 class="bit_title underline">Admin:</h1>
+                    <div class="content-welcome">
+                        <p>This is admin profile section. Admin can change account details from here. So admin doesn't need to do this manually from database. In order to do that, Admin will have click on the under arrow beside the profile photo. From there admin will get three different options Edit Profile, Change Password and Logout. From Edit Profile admin can <strong>change</strong> his account details. From Reset Password Admin can also <strong>Update</strong> his password. And if admin wants to logout from this panel, he can logout from here by clicking <strong>Logout</strong> option.</p>
+                    </div>
+                </div>
+
+                <!--id dashboard-->
+                <div id="dashboard" class="common_section">
+                    <h1 class="bit_title underline">Dashboard:</h1>
+                    <div class="content-welcome">
+                        <p>Here admin can check few basic statistics for his/her complete website like pending orders, processing orders, completed orders, total products, total customers and total posts. Admin can see top referral websites, most used OS, total sales in last 30 days and other details like recent orders, recent customers, popular products.</p>
+                    </div>
+                </div>
+
+                <!--id all Orders-->
+                <div id="allOrders" class="common_section">
+                    <h1 class="bit_title underline">Orders:</h1>
+                    <div class="content-welcome">
+                        <p><strong>All Orders: </strong> Admin can see all the orders from here. Admin can check all the orders complete details from here. From here admin can mark any order processing, pending or declined. Then admin can also check Processing, Declined or Completed orders separately. If admin wants to send email to customer then he can do it by just clicking send email.</p>
+                        <p>By Clicking on Order Number, admin can <b>print the invoice</b> too. Admin can see the order tracks by clicking track order. Admin also can add order track and change it and delete it. Admin can change the delivery status by clicking on delivery status.</p>
+                    </div>
+                </div>
+
+                <!--id pending Orders-->
+                <div id="pendingOrders" class="common_section">
+                    <div class="content-welcome">
+                        <p><strong>Pending Orders: </strong> Admin can see the pending orders list placed by the users from orders page. Admin can see the order tracks by clicking track order. Admin also can add order track and change it and delete it. Admin can change the delivery status by clicking on delivery status.</p>
+                        <p>Admin can <strong>view details of placed pending orders</strong>. Admin can contact to the user by sending email if wants.Pending order process, complete or decline can be done by admin.</p>
+                    </div>
+                </div>
+
+                <!--id processing Orders-->
+                <div id="processingOrders" class="common_section">
+                    <div class="content-welcome">
+                        <p><strong>Processing Orders: </strong> Admin can see the processing orders list placed by the users from orders page. Admin can see the order tracks by clicking track order. Admin also can add order track and change it and delete it. Admin can change the delivery status by clicking on delivery status.</p>
+                        <p>Admin can <strong>view details of placed processing orders</strong>. Admin can contact to the user by sending email if wants. Processing order process, complete or decline can be done by admin.</p>
+                    </div>
+                </div>
+
+                <!--id completed Orders-->
+                <div id="completedOrders" class="common_section">
+                    <div class="content-welcome">
+                        <p><strong>Completed Orders: </strong> Admin can see the completed orders list placed by the users from orders page. Admin can see the order tracks by clicking track order. Admin also can add order track and change it and delete it. Admin can change the delivery status by clicking on delivery status.</p>
+                        <p>Admin can <strong>view details of placed completed orders</strong>. Admin can contact to the user by sending email if wants. Completed order process, complete or decline can be done by admin.</p>
+                    </div>
+                </div>
+
+                <!--id declined Orders-->
+                <div id="declinedOrders" class="common_section">
+                    <div class="content-welcome">
+                        <p><strong>Declined Orders: </strong> Admin can see the declined orders list placed by the users from orders page. Admin can see the order tracks by clicking track order. Admin also can add order track and change it and delete it. Admin can change the delivery status by clicking on delivery status.</p>
+                        <p>Admin can <strong>view details of placed declined order</strong>. Admin can contact to the user by sending email if wants. Declined order process, complete or decline can be done by admin.</p>
+                    </div>
+                </div>
+
+
+                <!-- Order Details-->
+                <div class="common_section">
+                    <div class="content-welcome">
+                        <p><strong>Order Details: </strong> Admin can see the details of the order including the invoice, admin can also print that invoice if wants. Details page includes lots of informations like Payment method, status, transaction id, billing details, shipping details etc. Admin can see the products that has been in the order. If that product belongs to a vendor admin can also view their shop name including their status.</p>
+
+                    </div>
+                </div>
+
+                <!-- Track Order-->
+                <div class="common_section">
+                    <div class="content-welcome">
+                        <p><strong>Track Order: </strong> When an order is placed by a customer, system will automatically generate a track information that the order is pending. Admin can manage the track information of that order so the customer can be notified.</p>
+                    </div>
+                </div>
+
+                <!-- Delivery Status-->
+                <div class="common_section">
+                    <div class="content-welcome">
+                        <p><strong>Delivery Status: </strong> This is the most important part of this section where admin will confirm the order or not in here there is 3 fields payment status, delivery status and track note. If the payment successfully happens then the status will automatically displayed paid and if payment is manual like cash on delivery or mobile payment, admin can make change it when the payment is completed. Admin can also change the delivery status from here. Admin also give track note for the delivery status update but that is optional.</p>
+                    </div>
+                </div>
+
+
+                <!-- Notes-->
+                <div class="common_section">
+                    <div class="content-welcome">
+                        <p><strong>Notes: </strong> In order details if an order contains a licenced product then admin can change the key for that customer, customer can discuss about this with admin via email, message and dispute. If an order contains all licenced product then there won't be any manual payment, only automatic payments will be available and the system will automatically set the payment status as paid and delivery status as completed if he transaction is successfull.</p>
+                    </div>
+                </div>
+
+                <!--id all Products-->
+                <div id="allProducts" class="common_section">
+                    <h1 class="bit_title underline">Products:</h1>
+
+                    <p><strong>Add New Product:</strong></p>
+                    <div class="content-welcome">
+                        <p>Admin can add new products from this section. In the top section admin will see three tab such as Physical, Digital and License. After selecting one of these He needs to complete the form to publish any product.</p>
+                    </div>
+                    <p style="text-decoration: underline;"><strong>For adding or editing a new product one must know these few tricks:</strong></p>
+                    <div class="content-welcome">
+                        <p><strong>These sections </strong> are available for all types of product.</p><br>
+                        <p>You have to select the category for the product, subcategory and child category are optional</p><br>
+                        <p>Featured image size should <strong>800x800px or any square size image</strong> with small size like 50KB. If  admin uses small size images then the website will load faster.</p><br>
+                        <p>For gallery images, admin must add square and low size images to for fast loading. You can add multiple images from your computer in the gallery. 4-6 images are perfect number to add as gallery image.</p><br>
+                        <p>You can set the meta tag and desciption for the product by just clicking on Allow Product SEO. How ever that field is optional</p><br>
+                        <p>For Product Price and Previous Price, just use number. <strong>Don't use any symbol</strong> in those fields. </p><br>
+                        <p>Product Description and Product Buy/Return Policy have HTML editor. So you can customize your text according to your wish. Such as bullet points, color etc.</p><br>
+                        <p>You can add youtube video url of any product if you want.</p><br>
+                        <p>At last the feature tags section allows you to show small tags in product that will be displayed for better designing. You just have to give keyword and color. For example if you add a keyword top and give color black then it will be displayed on your product. This section is optional and you can add unlimited tags just click <strong>Add More Field</strong> Button.</p><br>
+                        <p>After reviewing everything just submit your product and it will be published.</p><br>
+                    </div>
+
+                    <p style="text-decoration: underline;"><strong>Physical Product:</strong></p>
+                    <div class="content-welcome">
+                        <p>There are few check mark option for admin. If you want to use those feature then you can. But these fields are not mandatory. Such as: Product Sku,Product Condition, Allow Estimation Time, Allow Product Sizes, Allow Product Colors, Allow Product Whole Sell, Allow Product Measurement.</p><br>
+
+                        <p><strong>Product Attribute</strong> is the great feature of this script. With this feature you can add unlimited attribute for your product. The Attributes are related with categories so if you select category that has attributes then those attributes keywords will available including price fields. You can then select those attributes for your product </p><br>
+                        
+                        <p><strong>Product Stock</strong> is an another great feature of this script. Put zero (0) if you want to show any product as out of stock. Leave it Empty if you want to show this product as unlimited number. Your customers can order unlimited product if you leave the field empty.  Or you can just set a number of your products according to your stock. If the stock is finished then it customers can't order more. </p><br>
+
+                        <p><strong>Product size</strong> is optional, but if you want to add this feature you have to give the size name, size qty and size price. <strong>size price</strong> will be added with your with your base price for example if your product price 10$ and size price is 2$ then when customer will select this size he or she has to pay 12$ you can set the size price to 0 if you don't want to add. Lastly as you can see both stock and product size can't work together therefore if you select prouct size then stock and product measurement won't work .You can add unlimited size, you just have to click <strong>Add More Size</strong> button.</p><br>
+
+                        <p><strong>Product color</strong> is optional, but if you want to add this feature you have to give the color code of the product. You can add unlimited color, you just have to click <strong>Add More Color</strong> button.</p><br>
+
+                        <p><strong>Product Whole Sell</strong> is an another great feature of this script, this feature allow you to give discount to the customer for buying a specific quantity. You have to give the quantity and the discount percentage. For example if you give a whole sell of when a user buy 10 of this item at once he or she will 10% off, you can set this by filling those fields. You can add Whole Sell, you just have to click <strong>Add More Field</strong> button.</p><br>
+
+                        <p><strong>Product Measurement</strong> is optional, but you can add it if you want give any specific designation to the product qty like KG, LITRE, GRAM if you want to set custom measurement just select custom and give the measurement.</p><br>
+                    </div>
+                    <p style="text-decoration: underline;"><strong>Digital Product:</strong></p>
+                    <div class="content-welcome">
+                        <p>In Digital Product you have to give select the file upload type if it's a file then you just have give the file and file type must be in zip format or if it's a link then just give the link of the file. If a user purchase digital product then he or she can download the files from their dashboard.</p>
+                    </div>
+
+                    <p style="text-decoration: underline;"><strong>License Product:</strong></p>
+                    <div class="content-welcome">
+                        <p>In License Product you have to give select the file upload type if it's a file then you just have give the file and file type must be in zip format or if it's a link then just give the link of the file. If a user purchase digital product then he or she can download the files from ther dashboard.</p>
+                        <p>You have to give license key and it's qty for licensed products. You can add unlimited license you just have to click Add More Field.</p>
+                        <p>There are some other optional fields they are platform, region, and license type.</p>
+                    </div>
+
+                    <div class="content-welcome">
+                        <p><strong>All Products: </strong> From Here admin can see all the products and admin can activate or deactivate any product from here. Admin can highlight any Product on Homepage from this section. Just click on Highlight then add check mark in the lists. You can change list names from language option. Admin can set gallery from here too and can remove the products.</p>
+                    </div>
+                </div>
+
+                 <!--id deactivated Products-->
+                <div id="deactivatedProducts" class="common_section">
+                    <div class="content-welcome">
+                        <p><strong>Deactivated Products: </strong>In The Deactivated Products, Admin can check all the deactivated products and can active again if admin wants.</p>
+                    </div>
+                </div>
+
+
+                 
+                 <div i class="common_section">
+                    <div class="content-welcome">
+                        <p><strong>Product Catalogs: </strong>Here Admin can see product lists that has been added to the catalog. These products can be viewed by the vendors and the can sell these product as retail. </p>
+                    </div>
+                </div>
+
+
+                <div i class="common_section">
+                    <div class="content-welcome">
+                        <p><strong>Notes: </strong>If a physical product has sizes then the system will automatically select the first size price and added with your product's base price. Same things goes for attributes if product has attribute then system will automatically add it's price with base price. </p>
+                    </div>
+                </div>
+
+                 <!--id Affialte Products-->
+                <div id="affilate_prod" class="common_section">
+                    <div class="content-welcome">
+                        <p><strong>Affilate Product: </strong>Admin can add affilate products from here. For that admin have to fill the form and submit it. <p>Admin can add/edit products from here. Affilate products are same as the other products. Admin have to give the affilate link for the product and fill the other informations.</p>
+                        <p>You can add </p>
+                    </div>
+                </div>
+
+                <!--id customers-->
+                <div id="customersList" class="common_section">
+                    <h1 class="bit_title underline">Customers:</h1>
+                    <div class="content-welcome">
+                        <p><strong>Customers List: </strong> Admin can check all customers here and can contact with them via email. All the information will be available of customers. Admin can also change the default customer image too. Admin can also block / unblock customers from login and also can delete them.</p>
+                    </div>
+                </div>
+
+                <!--id customers-->
+                <div id="customerWithdraws" class="common_section">
+                    <div class="content-welcome">
+                        <p><strong>Withdraws: </strong> If any customer has affiliate bonus then they can request to withdraw and admin can check it from the withdraws option.</p>
+                    </div>
+                </div>
+
+                <!--id vendors List-->
+                <div id="vendorsList" class="common_section">
+                    <h1 class="bit_title underline">Vendors:</h1>
+                    <div class="content-welcome">
+                        <p><strong>Vendors List: </strong>Admin can check all the vendors details from Vendors list. From here admin can active or deactivate vendors manually. Admin can ask a vendor for verification from this section also. Admin can also change the default vendor background color too. In ask for verification admin can write down what kind of documents he wants like NID, Business License.</p>                        
+                    </div>
+                </div>
+
+                 <!--id withdraws-->
+                <div id="withdraws" class="common_section">
+                    <div class="content-welcome">
+                        <p><strong>Withdraws: </strong>Admin can check all the vendor withdraw request from the Withdraws Section. Then admin can manually complete the request.</p>
+                    </div>
+                </div>
+
+
+                <div id="vendorsubs" class="common_section">
+                    <div class="content-welcome">
+                        <p><strong>Vendor Subscriptions: </strong>In Vendor Subscriptions, all the subscribed vendors details will be here. Admin can check everything of the vendors from here too.</p>
+                    </div>
+                </div>
+
+                <!--id vendors List-->
+                <div id="subplans" class="common_section">
+                    <h1 class="bit_title underline">Subscription Plans:</h1>
+                    <div class="content-welcome">
+                        <p>Admin can create unlimited subscription plans from this section.  To create subscription plan just Create new plan and submit.</p>                        
+                    </div>
+                </div>
+
+
+                <!--id vendors List-->
+                <div id="verify" class="common_section">
+                    <h1 class="bit_title underline">Vendor Verifications:</h1>
+                    <div class="content-welcome">
+                        <p>When the admin will ask for verification from vendors list then a notification message will be displayed in vendor dashboard then vendor has to give the attachments that admin wants from the vendor. Then submit that form.</p>
+                        <p><strong>All Verifications : </strong> Admin can check all the verfications from here. admin can verify or declline it. Admin can also view the attachments. Admin can also remove it.</p>                        
+                    </div>
+                    <div class="content-welcome">
+                        <p><strong>Pending Verifications : </strong> Admin can check the pending verfications from here. admin can verify or declline it. Admin can also view the attachments. Admin can also remove it.</p>                        
+                    </div>
+                </div>
+
+
+
+                <!--id Main Category-->
+                <div id="mainCategory" class="common_section">
+                    <h1 class="bit_title underline">Manage Categories</h1>
+
+                <div  class="common_section">
+                    <div class="content-welcome">
+                        <p>You can add attributes for advanced filters under Category, Subcategory & Child Category. There is button named ‘create’ in ‘Main Category’, ‘Sub Category’, ‘Child Category’ section to add attributes and options under attribute [NB: while creating attribute you cannot create any attribute named ‘Color’, ‘Size’ as we have kept ‘Allow Product Size’ and ‘Allow Product Colors’ fileld in product upload form] After you have created any attribute under a Main Category / Subcategory / Child Category you will find a ‘manage’ button for that corresponding main Category / Subcategory / Child Category. After clicking that button you will be able to edit / delete attributes of that corresponding Main Category / Subcategory / Child Category. These attributes and attribute options will be shown in search page after selecting a Main Category / Sub Category / Child Category.</p>
+                    </div>
+                </div>
+
+
+
+                    <div class="content-welcome">
+                        <p><strong>Main Category: </strong> Admin can view all main categories from Main Category page. Admin can add a new category from Add Category page. If wants to add new category admin will have to click on <strong>Add New Category</strong> from the top right corner of Main Category page &amp; fill the category name &amp; slug. Admin can add a photo of the main category it's optional</p>
+                        <p>Slug must be in <strong>English</strong> and should be <strong>small letters</strong> because it will be used as Website URL.</p>
+                        <p>Admin can also <strong>Update</strong>, <strong>active or deactive</strong> and <strong>Remove</strong> added category.</p>
+                    </div>
+                </div>
+
+                <!--id Sub Category-->
+                <div id="subCategory" class="common_section">
+                    <div class="content-welcome">
+                        <p><strong>Sub Category: </strong>Admin can view all sub categories from Sub Category page. Admin can add a new sub category from Add Sub Category page. If wants to add new sub category admin will have to click on <strong>Add New Sub Category</strong> from the top right corner of Sub Category page &amp; fill the all forms &amp; must be select category type.</p>
+                        <p>Slug must be in <strong>English</strong> and should be <strong>small letters</strong> because it will be used as Website URL.</p>
+                        <p>Admin can also <strong>Update</strong>, <strong>active or deactive</strong> and <strong>Remove</strong> added sub category.</p>
+                    </div>
+                </div>
+
+                <!--id Child Category-->
+                <div id="childCategory" class="common_section">
+                    <div class="content-welcome">
+                        <p><strong>Child Category: </strong>Admin can view all child categories from Child Category page. Admin can add a new child category from Add Child Category page. If wants to add new child category admin will have to click on <strong>Add New child Category</strong> from the top right corner of Child Category page &amp; fill the all forms &amp; must be select category type.</p>
+                        <p>Slug must be in <strong>English</strong> and should be <strong>small letters</strong> because it will be used as Website URL.</p>
+                        <p>Admin can also <strong>Update</strong>, <strong>active or deactive</strong> and <strong>Remove</strong> added child category.</p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+                <!--id vendors List-->
+                <div id="bulk_prod" class="common_section">
+                    <h1 class="bit_title underline">Bulk Product Upload:</h1>
+                    <div class="content-welcome">
+                        <p>Admin can add product by using csv file. Admin can download the sample from here. To Add Products admin must upload a csv file and submit it. </p>                        
+                    </div>
+                </div>
+
+                <!--id vendors List-->
+                <div id="prodiscuss" class="common_section">
+                    <h1 class="bit_title underline">Product Discussion:</h1>
+                    <div class="content-welcome">
+                        <p>Admin Can check the product comment and review from here. Admin can delete these or contact with the customer from here. </p>                        
+                    </div>
+                </div>
+
+                <!--id coupons-->
+                <div id="coupons" class="common_section">
+                    <h1 class="bit_title underline">Coupons:</h1>
+                    <div class="content-welcome">
+                        <p>Admin can view all coupons here. Admin can add new coupons from top right corner. If Admin wants to add new coupon admin will have to click on Add New Coupon from the top right corner of Coupons page & fill the all fields.
+                        Admin can also update, active or deactive and Remove added coupons.</p>
+                    </div>
+                </div>
+
+                <!--id blogSection-->
+                <div id="blogSection" class="common_section">
+                    <h1 class="bit_title underline">Blog:</h1>
+                    <div class="content-welcome">
+                        <p>Admin can manage blog from here. In order to add a post admin will have to set the categoies for the posts. To Add Blog post admin will have to click on Add New Blog from the top right corne. Admin have to complete the simple steps from Add New Blog page. 
+Please use same size image for all the blog post, So it blog images will be same in any device like mobile, computer or tablet computer.
+Admin can Edit and Remove added blog by single click.</p> 
+                    </div>
+                </div>
+
+
+                <!--id blogSection-->
+                <div id="messages" class="common_section">
+                    <h1 class="bit_title underline">Message:</h1>
+                    <div class="content-welcome">
+                        <p>In this section, admin will get all the messages from  customer and reply it from here.</p> 
+                        <b>Tickets:</b>
+                        <p>Admin can see the list of tickets sent by the customers and also can reply them.</p> 
+                        <b>Disputes:</b>
+                        <p>Admin can see the list of disputes sent by the customers and also can reply them.</p> 
+
+                    </div>
+                </div>
+                <!--id logo-->
+                <div id="logo" class="common_section">
+                    <h1 class="bit_title underline">General Settings</h1>
+                    <div class="content-welcome">
+                        <p>
+                            In General Settings, Admin can add/edit logo, favicon, loader, background image, review background image etc. Admin can change all the success messages from Success Message option. 
+                        </p>
+                        <p>
+                            <strong>Logo: </strong>  Admin can upload logo from here. Logo width should be 280px or less.
+                        </p>
+                    </div>
+                </div>
+
+                <!--id favicon-->
+                <div id="favicon" class="common_section">
+                    <div class="content-welcome">
+                        
+                        <p>
+                            <strong>Favicon: </strong>  Admin can upload Favicon from here. Favicon size should be 32x32px.
+                        </p>
+                    </div>
+                </div>
+
+                <!--id loader-->
+                <div id="loader" class="common_section">
+                    <div class="content-welcome">
+                        
+                        <p>
+                            <strong>Loader: </strong>  Admin can upload loader from here.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="shipping_methods" class="common_section">
+                        <div class="content-welcome">
+                            
+                            <p>
+                                <strong>Shipping Methods: </strong>  Admin can add new shipping methods and edit or delete too. This will be displayed on checkout page.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="packagings" class="common_section">
+                            <div class="content-welcome">
+                                
+                                <p>
+                                    <strong>Packagings: </strong>  Admin can add packaging and edit or delete too. This will be displayed on checkout page.
+                                </p>
+                            </div>
+                        </div>
+
+
+                <!--id Pickup Location-->
+                <div id="picupLocation" class="common_section">
+                    <div class="content-welcome">
+                        <p><strong>Pickup Location</strong> is to set websites pickup location point where the customer can go to collect their product. Admin can add unlimited pickup locations from here and customers can use this locations to ship his product.</p>
+                    </div>
+                </div>
+
+
+                <!--id Website Contents-->
+                <div id="websiteContents" class="common_section">
+                    <div class="content-welcome">
+                        <p><strong>Website Contents: </strong> Here admin can set website title which will show on browser tab. Admin can set his popular tags from this page and it will show on category page and customers can click on any tag and can check similar product with this tag.</p>
+                        <p><strong>Theme Color option: </strong> is a great feature in this script. Our default color is blue and admin can change it to any color from this color picker.</p>
+                        <p>Admin can also change the menu color, menu hover color, header color, footer color and copyright color.</p>
+                        <p>Admin Can set his current admin panel background color from here too.</p>
+                        <p>This script has Tawak.to feature. So, if admin wants to integrate a live chat option then he can do it very easily. Just need to activate the option and collect his twak.to script in the box.</p>
+                        <p>It also contains other important informations like if want https in site or not, if want want to display home link in the page or not, if you want to show capcha in the forms or not, if you want email verification form sign up or not, if you want to display stock number or not, if you want tawl.to in your site or not, if you want disqus in your blog or not and lastly the CRONJOB url will be displayed on there, you have to set this link to your site's CRONJOB.</p>
+                    </div>
+                </div>
+
+
+
+
+                <!--id Footer-->
+                <div id="footer" class="common_section">
+                    <div class="content-welcome">
+                        <p> <strong>Footer: </strong>Admin can change <strong>Website Footer</strong> Information from here. For that Admin just need to fill up the form</p>
+                    </div>
+                </div>
+
+                <!--id affiliate Informations Option-->
+                <div id="affiliateInformations" class="common_section">
+                        <div class="content-welcome">
+                            <p><strong>Affiliate Informations: </strong>Admin can change enable / disable affilate system and also can change affilate percentage and banner.</p>
+                        </div>
+                    </div>
+
+
+                <div id="popup_banners" class="common_section">
+                    <div class="content-welcome">
+                        <p><strong>Popup Banner: </strong>  Admin can change the pop up banner from here. For that Admin just need to fill up the form.</p>
+                    </div>
+                </div>
+
+                <div id="error_banners" class="common_section">
+                    <div class="content-welcome">
+                        <p><strong>Error Banner: </strong>  Admin can change the error banner from here. For that Admin just need to fill up the form.</p>
+                    </div>
+                </div>
+
+                <div id="maintenance" class="common_section">
+                    <div class="content-welcome">
+                        <p><strong>Website Maintenance: </strong> You can set your site for maintenance mode if you want. Whenever the system is in maintenance mode the maintenace text will be written on your site.</p>
+                    </div>
+                </div>
+
+
+                <!--id sliders-->
+                <div id="sliders" class="common_section">
+                    <h1 class="bit_title underline">Home Page Settings</h1>
+                    <div class="content-welcome">
+                        <p>Here admin can set everything in homepage such as sliders, service section, banners, reviews and partners. In the Customization, admin can disable any section from homepage to load the website faster. Just remember that, if admin uses small size image and small content on this option then the website will load faster. Just disable the sections those are not necessary for you and click on Submit button.</p>
+
+                    </div>
+                </div>
+
+
+                <!--id FAQ-->
+                <div id="faqPage" class="common_section">
+                    <h1 class="bit_title underline">Menu Page Settings</h1>
+                    <div class="content-welcome">
+                        <p>In this section admin can control the FAQ , Contact Us page and other pages. You can use the editor to write your content and decorate it with the HTML builder. You can add unlimited pages from the Others Pages section. You can also set where the page will available in header or in footer.</p>
+                    </div>
+                </div>
+
+
+                <!--id Payment Informations-->
+                <div id="emailtemplates" class="common_section">
+                    <h1 class="bit_title underline">Email Settings</h1>
+                    <div class="content-welcome">
+                        <p><strong>Email Template: </strong>Admin can design his own email template from here. He can add the dynamic fields and any elements  from  the text editor.  If admin wants to mention the customer name then just copy the <b>BB CODE</b>{customer_name} from the above table and paste in your template. It will automatically identify the client name.</p>
+                    </div>
+                </div>
+
+                <!--id payment Gateways-->
+                <div id="emailconf" class="common_section">
+                    <div class="content-welcome">
+                        <p><strong>Email Configuration: </strong>Admin can setup SMTP or PHP mail service from here. If admin deactivate the SMTP from top section then the website email system will be PHP mail system. Your hosting provider can help you to fill up the form. You can get your smtp credentials from your hosting service.</p>
+                    </div>
+                </div>
+
+                <!--id currency Settings-->
+                <div id="groupemail" class="common_section">
+                    <div class="content-welcome">
+                        <p><strong>Group Email: </strong>Admin can send group emails from this option. Just select your options then write your mail and send.</p>
+                    </div>
+                </div>
+
+
+                <!--id Payment Informations-->
+                <div id="paymentInformations" class="common_section">
+                    <h1 class="bit_title underline">Payment Settings</h1>
+                    <div class="content-welcome">
+                        <p><strong>Payment Informations: </strong>Admin can Activate or Deactivate Guest Checkout, Paypal, Stripe, Instamojo, paystack and Cash on Delivery from here. To setup Paypal or stripe just fill the fields with correct information of paypal, stripe, instamojo, paystack and Cash on Delivery. Admin can show currency symbol before or after the price from here. Admin needs to  set Withdraw Fee, Withdraw Charge in percentage, Fixed Commission from here. Vendors need to pay this fee when they will get their payment after selling products in this market.</p>
+                        <p>Admin can also add a percent commission when vendor add price for a product. Admin just need to add a Percentage Commission here. Admin Can add tax in percentage too.</p>
+                        <p>Admin can leave this fee and percentage options by putting zero (0).</p>
+                        <p><strong>Multiple Shipping </strong>for multiple vendor price. If it is enable then customer needs to pay multiple shipping cost for multiple vendors. If it is not selected then customer will pay for one shipping cost for all the vendors product for checkout.</p>
+                        <p>Admin Can Enable or Disable Shipping information for vendors if he wants. </p>
+                    </div>
+                </div>
+
+                <!--id payment Gateways-->
+                <div id="paymentGateways" class="common_section">
+                    <div class="content-welcome">
+                        <p><strong>Payment Gateways: </strong>Admin can add manual payment gateways to accept payment from any source. Such as, if admin wants to take payment by mobile payment methods manually then admin can setup it from here and can provide account details here. Customer will pay from his/her account and can provide the transaction details here. Admin can add unlimited payment options here.</p>
+                    </div>
+                </div>
+
+                <!--id currency Settings-->
+                <div id="currencySettings" class="common_section">
+                    <div class="content-welcome">
+                        <p><strong>Currency Settings: </strong>Admin can add any currency from here. Just need currency name, Sign and currency value for 1 USD. So customer can pay by his/her currency.</p>
+                    </div>
+                </div>
+
+                <div  class="common_section">
+                    <div class="content-welcome">
+                        <p><strong>Notes: </strong>When ever a vendor add a product, in the site vendor's product price will be price + percentage commision + fixed commission. For example: if a vendor give a product's price 100 and fixed commission is 5 and percentage commision is 5%, then in the site it will be 100 + 5 + 5 = 110.</p>
+                    </div>
+                </div>
+
+
+                
+                <!--id manage Staffs-->
+                <div id="socialsettings" class="common_section">
+                    <h1 class="bit_title underline">Social Settings</h1>
+                    <div class="content-welcome">
+                        <p> Admin can add social links from here and enable or disable it. For Facebook and Google login, admin just need to provide the right information. Admin can Activate or Deactivate these social logins from here.</p>
+                    </div>
+                </div>
+
+                <!--id languageSetting-->
+                <div id="languageSetting" class="common_section">
+                    <h1 class="bit_title underline">Language Setting</h1>
+                    <div class="content-welcome">
+                        <p>There are two types of language in this system:</p>
+                        <p><b>1. Website Language</b></p>
+                        <p><b>2. Admin Lnaguage</b></p>
+                        <p><b>1. Website Language: </b></p>
+                        <p>Website Language will be displayed on front pages, user panel and vendor panel. Admin can add unlimited language from here and can Activate or Deactivate Multiple language features. Just need to add new language and submit.</p>
+                        <p><b>2. Admin Language: </b></p>
+                        <p>Admin Language will be displayed on admin panel. Admin can add unlimited language. Just need to add new language and submit.</p>
+                    </div>
+                </div>
+
+                <!--id Seo Tools-->
+                <div id="seotools" class="common_section">
+                    <h1 class="bit_title underline">SEO Tools:</h1>
+                    <div class="content-welcome">
+                        <p>Admin can check websites most popular products from here. Admin can filter it too. From here admin can setup google analytics and meta keywords. It is mandatory field for any website for better SEO result and checking the traffic.</p>
+                    </div>
+                </div>
+
+                <!--id manage Staffs-->
+                <div id="manageStaffs" class="common_section">
+                    <h1 class="bit_title underline">Manage Staffs</h1>
+                    <div class="content-welcome">
+                        <p> Main admin can add unlimited staffs and can give them different roles to staff. Staff has few limitations such as, they can't control the website sections but can control specific sections like customers, vendors, All Orders etc.</p>
+                    </div>
+                </div>
+
+                <!--id manage Staffs-->
+                <div id="subscribers" class="common_section">
+                    <h1 class="bit_title underline">Subscribers</h1>
+                    <div class="content-welcome">
+                        <p> Main admin can see list of subscribers from here. Admin can download the subscribers list from here also.</p>
+                    </div>
+                </div>
+
+                <!--id manage Staffs-->
+                <div id="manageroles" class="common_section">
+                    <h1 class="bit_title underline">Manage Roles</h1>
+                    <div class="content-welcome">
+                        <p> Main admin can add unlimited roles from this section. Admin can set the permissions of individual roles like All Orders, Customers, Vendors etc. Admin can edit and delete the roles too.</p>
+                    </div>
+                </div>
+
+
+
+
+                <!--id Developer support-->
+                <div id="support" class="common_section">
+                    <h1 class="bit_title">Developer Support</h1>
+                    <div class="content-welcome">
+                        <p>
+                            We are always happy to hear from you. Please feel free to contact us for any kind of customization, support, query and suggestion. We will respond as soon as possible. We reply all our emails within 36 hours. Please email us from our profile so we can verify you as our client and help you to solve any issue. <br>
+                            Our profile: <a href="https://codecanyon.net/user/geniusocean">https://codecanyon.net/user/geniusocean</a>
+                            <br/>
+                            Thank you,
+                            <br/>
+                            <Strong>GeniusOcean</Strong>
+                            <br/>
+                            Or
+                            <br/>
+                            <a href="" class="btn boxed-btn">Contact Us</a> 
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        $(".anchor").on("click", function(event) {
+            var target = $($(this).attr("href"));
+
+            if (target.length) {
+                event.preventDefault();
+                $("html, body").animate({
+                    scrollTop: target.offset().top - 0 + 'px'
+                }, 1000);
+            }
+        });
+
+        $(".left-content>ul>li").on("click", function() {
+            $(this).children(".dropdown").slideToggle();
+            $(this).siblings("li").children(".dropdown").slideUp();
+        });
+        $(".left-content .dropdown li ").on("click", function(e) {
+            e.stopPropagation();
+        });
+
+    </script>
+</body>
+
+</html>
