@@ -4,10 +4,6 @@ GeniusCart
 GeniusCart - Single or Multivendor Ecommerce System with Physical and Digital Product Marketplace
 Updated on: Mar 23, 2019
 
-By: GeniusOcean
-
-Email: badruddoza.me@gmail.com
-
 About
 “GeniusCart” is The All in ONE solution for SINGLE or MULTI Vendor Ecommerce Business Management System. This CMS Includes everything you need to make an ecommerce business and one of the BEST eCommerce store available in envato market. If you properly check all the functionalities of this system then we can assure you that you will skip other best ecommerce platforms or online stores.
 
