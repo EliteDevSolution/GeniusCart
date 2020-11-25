@@ -1,4 +1,4 @@
-# GeniusCart
+# GeniusCart (https://codecanyon.net/user/geniusocean)
 Laravel GeniusCart
 GeniusCart
 GeniusCart - Single or Multivendor Ecommerce System with Physical and Digital Product Marketplace
